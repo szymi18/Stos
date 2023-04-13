@@ -80,7 +80,7 @@ public class Stack {
     public int top(){
         if (pozycja < 0)
             throw new StackEmptyException();
-        return stos[pozycja];
+        return stos[pozycja - 1];
     }
 
     //size - pokazuje rozmiar stosu
